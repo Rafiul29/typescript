@@ -17,9 +17,6 @@ var User = /** @class */ (function () {
         this.name = n;
         this.age = a;
     }
-    User.prototype.disPlay = function () {
-        console.log("name " + this.name + " age " + this.age);
-    };
     return User;
 }());
 var Students = /** @class */ (function (_super) {

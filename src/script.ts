@@ -1,14 +1,12 @@
 
-class User{
+abstract class User{
     name: string;
     age: number;
-    constructor(n:string,a:number) {
+    protected constructor(n:string, a:number) {
         this.name=n;
         this.age=a;
     }
-    disPlay(): void{
-        console.log(`name ${this.name} age ${this.age}`);
-    }
+   abstract disPlay(): void
 }
 class Students extends User{
     id: number;
