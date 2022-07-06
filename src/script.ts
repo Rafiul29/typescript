@@ -10,9 +10,17 @@ class User{
         console.log(`name ${this.name} age ${this.age}`);
     }
 }
-
-const User1 = new User("Rafiul",24);
-User1.disPlay();
-
-const User2 = new User("Asfia Hossen",21);
-User2.disPlay();
+class Students extends User{
+    id: number;
+    constructor(n:string,a:number,id:number) {
+        super(n,a);
+        this.id=id;
+    }
+    disPlay(): void{
+        console.log(`name ${this.name} age ${this.age} id: ${this.id}`);
+    }
+}
+const Student1 = new Students('Rafiul',24,1814029)
+const Student2 = new Students('Asfia',22,2011137)
+Student1.disPlay();
+Student2.disPlay()
