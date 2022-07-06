@@ -1,14 +1,9 @@
-// console.log("Hello Rafiul")
+const userName:string = 'dndk';
+console.log(userName);
+function  addNumbers(num1:number, num2:number){
+    console.log(num1 + num2);
+}
 
-// const country = "Bangadesh is very ";
-// console.log(country)
-
-
-// function multiply(a:number,b:number){
-//     return a*b
-// }
-
-// console.log(multiply(6,4))
-
-// const array =["rafi","rakib","shamim"]
-// array.push(true)
+addNumbers(20,30)
+addNumbers(20,60)
+// tsc script.ts --> script.js --> node script.js

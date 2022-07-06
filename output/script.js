@@ -1,10 +1,9 @@
 "use strict";
-// console.log("Hello Rafiul")
-// const country = "Bangadesh is very ";
-// console.log(country)
-// function multiply(a:number,b:number){
-//     return a*b
-// }
-// console.log(multiply(6,4))
-// const array =["rafi","rakib","shamim"]
-// array.push(true)
+var userName = 'dndk';
+console.log(userName);
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
+addNumbers(20, 30);
+addNumbers(20, 60);
+// tsc script.ts --> script.js --> node script.js
