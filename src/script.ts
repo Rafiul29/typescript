@@ -48,3 +48,27 @@ person.push(person2)
 for(const key in person){
     console.log(person[key]);
 }
+
+
+//custom type
+
+type user= {id: number, name: string}
+
+let friends: user[];
+friends=[]
+let friend1: user;
+friend1={'id':212, 'name': 'Rafi' }
+friends.push(friend1)
+let friend2: user;
+friend2={'id':2011137, 'name': 'Asfia Hossen Mohona' }
+friends.push(friend2)
+console.log(friends)
+
+type RequestType ="GET" | "POST";
+let getRequest: RequestType;
+getRequest="GET"
+
+function requestHandler(requestType: RequestType){
+    console.log(requestType)
+}
+requestHandler("GET")

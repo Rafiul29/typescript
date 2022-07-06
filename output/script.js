@@ -44,3 +44,18 @@ person.push(person2);
 for (var key in person) {
     console.log(person[key]);
 }
+var friends;
+friends = [];
+var friend1;
+friend1 = { 'id': 212, 'name': 'Rafi' };
+friends.push(friend1);
+var friend2;
+friend2 = { 'id': 2011137, 'name': 'Asfia Hossen Mohona' };
+friends.push(friend2);
+console.log(friends);
+var getRequest;
+getRequest = "GET";
+function requestHandler(requestType) {
+    console.log(requestType);
+}
+requestHandler("GET");
