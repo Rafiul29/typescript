@@ -1,12 +1,10 @@
-// build-in data type : number ,string, boolean,void,undefined,null
-let id;
-let userId:number;
-let userName: string;
-let isActive: boolean;
-const c: string[]=[];
-
-function display(): void {
-    console.log('jbndjndd');
+//Union  Data Type
+let a: string | number;
+a = 34;
+a = 'Rafi';
+console.log(a);
+function ab(a: string | number) {
+    console.log(a);
 }
-
-display()
+ab(55);
+ab('45')

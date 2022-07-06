@@ -1,11 +1,11 @@
 "use strict";
-// build-in data type : number ,string, boolean,void,undefined,null
-var id;
-var userId;
-var userName;
-var isActive;
-var c = [];
-function display() {
-    console.log('jbndjndd');
+//Union  Data Type
+var a;
+a = 34;
+a = 'Rafi';
+console.log(a);
+function ab(a) {
+    console.log(a);
 }
-display();
+ab(55);
+ab('45');
