@@ -1,9 +1,11 @@
 "use strict";
-var userName = 'dndk';
-console.log(userName);
-function addNumbers(num1, num2) {
-    console.log(num1 + num2);
+// build-in data type : number ,string, boolean,void,undefined,null
+var id;
+var userId;
+var userName;
+var isActive;
+var c = [];
+function display() {
+    console.log('jbndjndd');
 }
-addNumbers(20, 30);
-addNumbers(20, 60);
-// tsc script.ts --> script.js --> node script.js
+display();

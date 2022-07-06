@@ -1,9 +1,12 @@
-const userName:string = 'dndk';
-console.log(userName);
-function  addNumbers(num1:number, num2:number){
-    console.log(num1 + num2);
+// build-in data type : number ,string, boolean,void,undefined,null
+let id;
+let userId:number;
+let userName: string;
+let isActive: boolean;
+const c: string[]=[];
+
+function display(): void {
+    console.log('jbndjndd');
 }
 
-addNumbers(20,30)
-addNumbers(20,60)
-// tsc script.ts --> script.js --> node script.js
+display()
