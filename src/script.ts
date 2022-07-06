@@ -11,11 +11,40 @@ a.push('hsjs');
 a.push('566');
 
 //Object types
-let c:{
-    name: string
-    age: number
+// let c:{
+//     name: string
+//     age: number
+// }
+// c={
+//     name: "rafiul islam",
+//     age: 67
+// }
+
+// just object declaration
+let users: object;
+users ={
+    'id': 1,
+    name: 'jnjndjn'
 }
-c={
-    name: "rafiul islam",
-    age: 67
+
+//object array declaration
+let person: object[];
+    person=[{
+        'id': 1,
+        'name': "rafiul"
+    },
+    {
+        'id': 2,
+        'name': 'rakibul'
+    }
+]
+let person1:{id: number,name: string}
+person1={'id':3, 'name': "shamim"}
+person.push(person1)
+
+let person2:{id: number,name: string}
+person2={'id':2011137, 'name': 'Asfia'}
+person.push(person2)
+for(const key in person){
+    console.log(person[key]);
 }
