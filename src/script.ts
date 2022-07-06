@@ -1,21 +1,6 @@
-// Array types
-let userName: string[];
-userName=['rafi','rakib'];
-console.log(userName[0])
-let multipleTypes: (string | number) [];
-multipleTypes= ['hjs', 34];
+// tuple - mixed data - key , value
 
-//Dynamic Types
-let a: any[]=[]
-a.push('hsjs');
-a.push('566');
-
-//Object types
-let c:{
-    name: string
-    age: number
-}
-c={
-    name: "rafiul islam",
-    age: 67
-}
+let user:[number,string]
+    user = [ 101, 'rafiul'];
+user.push(102,'rakib')
+console.log(user[0])
