@@ -12,6 +12,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+//Encapsulation....
+//Access modifiers : public,privet,protected,readonly
 var User = /** @class */ (function () {
     function User(n, a) {
         this.name = n;
@@ -32,9 +34,19 @@ var Students = /** @class */ (function (_super) {
     Students.prototype.disPlay = function () {
         console.log("name " + this.name + " age " + this.age + " id: " + this.id);
     };
+    Students.prototype.setId = function (id) {
+        this.id = id;
+    };
+    Students.prototype.getId = function () {
+        return this.id;
+    };
     return Students;
 }(User));
+// const  user1 = new User("rafiul", 24)
+// user1.name='asfia'
+// console.log(user1)
 var Student1 = new Students('Rafiul', 24, 1814029);
 var Student2 = new Students('Asfia', 22, 2011137);
 Student1.disPlay();
-Student2.disPlay();
+Student1.setId(123);
+console.log(Student1.getId());

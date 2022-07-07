@@ -1,7 +1,8 @@
-
+//Encapsulation....
+//Access modifiers : public,privet,protected,readonly
 class User{
-    name: string;
-    age: number;
+   public name: string;
+   public age: number;
     constructor(n:string,a:number) {
         this.name=n;
         this.age=a;
@@ -11,7 +12,7 @@ class User{
     }
 }
 class Students extends User{
-    id: number;
+   private id: number;
     constructor(n:string,a:number,id:number) {
         super(n,a);
         this.id=id;
@@ -19,8 +20,20 @@ class Students extends User{
     disPlay(): void{
         console.log(`name ${this.name} age ${this.age} id: ${this.id}`);
     }
+    setId(id: number): void{
+        this.id=id;
+    }
+    getId(): number{
+        return this.id;
+    }
 }
+// const  user1 = new User("rafiul", 24)
+// user1.name='asfia'
+// console.log(user1)
+
+
 const Student1 = new Students('Rafiul',24,1814029)
 const Student2 = new Students('Asfia',22,2011137)
 Student1.disPlay();
-Student2.disPlay()
+Student1.setId(123)
+console.log(Student1.getId())
