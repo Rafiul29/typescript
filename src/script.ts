@@ -12,7 +12,12 @@ class User{
 }
 
 const User1 = new User("Rafiul",24);
-User1.disPlay();
+// User1.disPlay();
 
 const User2 = new User("Asfia Hossen",21);
-User2.disPlay();
+// User2.disPlay();
+const Users : User []=[]
+Users.push(User1);
+Users.push(User2)
+console.log(Users)
+

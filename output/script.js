@@ -10,6 +10,10 @@ var User = /** @class */ (function () {
     return User;
 }());
 var User1 = new User("Rafiul", 24);
-User1.disPlay();
+// User1.disPlay();
 var User2 = new User("Asfia Hossen", 21);
-User2.disPlay();
+// User2.disPlay();
+var Users = [];
+Users.push(User1);
+Users.push(User2);
+console.log(Users);
