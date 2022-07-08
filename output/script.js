@@ -1,20 +1,10 @@
 "use strict";
-var form = document.querySelector(".user-form");
-console.log(form);
-var firstNameInput = document.querySelector("#firstname");
-var lastNameInput = document.querySelector("#lastname");
-var userNameInput = document.querySelector("#username");
-console.log(userNameInput);
-var selectInput = document.querySelector("#country");
-var feedbackInput = document.querySelector("#feedback");
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var userData = {
-        firstname: firstNameInput.value,
-        lastname: lastNameInput.value,
-        userName: userNameInput.value,
-        country: selectInput.value,
-        feedback: feedbackInput.value
-    };
-    console.log(userData);
-});
+// function types
+// let myFunc: Function;
+var myFunc = function (a, b, c) {
+    if (c === void 0) { c = "nfn"; }
+    //     console.log(c)
+    // console.log(`Hello ${a} and ${b}`);
+    return a + b;
+};
+myFunc('2', '4', 'jhjh');
