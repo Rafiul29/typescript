@@ -6,6 +6,7 @@ export class User implements isUser{
         this.name=n;
         this.age=a;
     }
+    // make privet property access
     getAge(){
       return this.age
     }
