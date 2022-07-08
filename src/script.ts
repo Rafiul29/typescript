@@ -72,3 +72,15 @@ function requestHandler(requestType: RequestType){
     console.log(requestType)
 }
 requestHandler("GET")
+
+// types Aliases
+
+type stringorNum = string | number;
+type userType = { name: string, age: number }
+
+const userDetails= (id: stringorNum, user: userType)=>{
+    console.log(`User id is ${id} , name is ${user.name} and age is ${user.age}`)
+}
+const sayHello = (user: userType)=>{
+    console.log(`hello ${user.age} ${user.name}`)
+}
