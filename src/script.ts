@@ -7,3 +7,10 @@ let myFunc=(a: string, b: string, c:string="nfn"): string =>{
 }
 
 myFunc('2','4','jhjh');
+
+
+//Function signatures
+let myfun :(x:number, y:number)=>number
+myfun=(a:number,b:number)=>{
+    return a+b;
+}

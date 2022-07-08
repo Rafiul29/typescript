@@ -8,3 +8,8 @@ var myFunc = function (a, b, c) {
     return a + b;
 };
 myFunc('2', '4', 'jhjh');
+//Function signatures
+var myfun;
+myfun = function (a, b) {
+    return a + b;
+};
